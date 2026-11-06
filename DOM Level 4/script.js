@@ -379,11 +379,11 @@ registrationForm.addEventListener("submit", function (event) {
 
   if (isValid) {
     formMessage.textContent = "Registration successful!";
-    formMessage.className = "success";
+    formMessage.classList.add("success");
 
     registrationForm.reset();
   } else {
     formMessage.textContent = "Please correct the errors above.";
-    formMessage.className = "error";
+    formMessage.classList.add("error");
   }
 });
